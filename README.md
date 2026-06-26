@@ -122,35 +122,13 @@ Power BI
 
 ## 🧩 Principes directeurs
 
-Les guides reposent sur plusieurs principes structurants.
-
-### 1. Pushdown-first
-
-Les transformations lourdes doivent être réalisées au plus près du moteur de données, principalement dans Snowflake ou via pushdown depuis Dataiku.
-
-### 2. Orchestration-second
-
-Les pipelines doivent être orchestrés, monitorés et contrôlés via une couche dédiée comme Dataiku, avec scenarios, checks, alertes et runbooks.
-
-### 3. Presentation-last
-
-Power Query doit rester une couche de dernier kilomètre, limitée aux ajustements légers spécifiques au rapport.
-
-### 4. One KPI, One Definition
-
-Un indicateur critique doit avoir une définition officielle, documentée et stable, afin d’éviter les divergences entre rapports.
-
-### 5. Quality by Design
-
-La qualité des données doit être intégrée dans les pipelines via tests, checks, contrôles de volume, fraîcheur, duplicats, nulls et réconciliation.
-
-### 6. Security by Design
-
-Les accès, données sensibles, masquages, rôles, connexions et exports doivent être gouvernés dès la conception.
-
-### 7. Production Readiness
-
-Un artefact data n’est pas considéré comme prêt pour la production sans owner, documentation, tests, monitoring, stratégie de rollback et processus de support.
+- **Pushdown-first** : réaliser les transformations lourdes au plus près du moteur de données, principalement dans Snowflake ou via pushdown depuis Dataiku.
+- **Orchestration-second** : orchestrer, monitorer et contrôler les pipelines via une couche dédiée comme Dataiku, avec scenarios, checks, alertes et runbooks.
+- **Presentation-last** : limiter Power Query aux ajustements légers de dernier kilomètre, spécifiques au rapport.
+- **One KPI, One Definition** : garantir une définition officielle, documentée et stable pour chaque indicateur critique.
+- **Quality by Design** : intégrer la qualité des données dès la conception via tests, contrôles de volume, fraîcheur, duplicats, nulls et réconciliation.
+- **Security by Design** : gouverner dès le départ les accès, données sensibles, masquages, rôles, connexions et exports.
+- **Production Readiness** : considérer un artefact data prêt pour la production uniquement avec owner, documentation, tests, monitoring, stratégie de rollback et processus de support.
 
 ---
 
@@ -321,7 +299,7 @@ Ces guides visent notamment à éviter :
 
 ---
 
-## 🗂️ Organisation recommandée du repository
+## 🗂️ Organisation du repository
 
 ```text
 engineering-guidelines/
