@@ -1,4 +1,4 @@
-# 📘 Engineering Guidelines — Data & Analytics Engineering Standards
+# 📘 Engineering Guidelines : Data & Analytics Engineering Standards
 
 ![Documentation](https://img.shields.io/badge/Documentation-Engineering%20Guidelines-blue)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Analytics%20%26%20Semantic%20Modeling-yellow)
